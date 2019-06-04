@@ -1,0 +1,30 @@
+{ "config" :{
+        "word_dim" : 300,
+        "hidden_dim" : 512,
+        "encoder_layers" : 3,
+        "decoder_layers" : 3,
+        "batch_size" : 64,
+        "encoder_bidirectional": 1,
+        "attention": 0,
+        "augment": 1,
+        "attention_dim": 128,
+        "max_sentence_length" : 15,
+        "training_steps" : 100000,
+        "save_frequency" : 1000,
+        "eval_frequency" : 100,
+        "learning_rate" : 0.001,
+        "log": 1,
+        "dropout_perc": 0.0,
+        "decoder_dropout_perc" :0.0,
+        "big_evaluation": 1000,
+        "batches_big_evaluation": 250,
+        "max_train_mins": 3000,
+        "dist_name": "vMF",
+        "word_embedding_directory": "data/word_embeddings/glove.6B.300d_yelp.txt",
+        "dataset_directroy": "data/bowman_data/yelp_dataset_final",
+        "model_save_directory" : "data/bowman_data/models/",
+        "model_restore_name": "best_model.ckpt-99999",
+        "log_dir": "logs/bowman/"
+
+}}
+
